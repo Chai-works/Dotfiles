@@ -1,0 +1,79 @@
+* {
+    font: "JetBrainsMono Nerd Font 12, Noto Color Emoji 12";
+
+    bg: #1e1e2e;
+    bg-alt: #313244;
+    fg: #cdd6f4;
+    accent: #45475a;
+
+    border-radius: 10px;
+}
+
+window {
+    width: 620px;
+    background-color: #1e1e2e;
+    border-radius: 16px;
+    padding: 18px;
+}
+
+mainbox {
+    spacing: 10px;
+    background-color: transparent;
+}
+inputbar {
+    children: [ entry ];
+    background-color: #313244;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+entry {
+    background-color: transparent;
+    text-color: #cdd6f4;
+    placeholder: "Search emoji...";
+}
+
+entry placeholder {
+    text-color: #6c7086;
+}
+
+
+listview {
+    lines: 10;
+    spacing: 6px;
+    background-color: transparent;
+}
+
+element {
+    padding: 8px;
+    margin: 4px 0;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+element normal.normal {
+    background-color: transparent;
+}
+
+element selected.normal {
+    background-color: #45475a;
+    border-radius: 10px;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: #cdd6f4;
+}
+
+element-text selected {
+    background-color: transparent;
+    text-color: #cdd6f4;
+}
+
+element-icon {
+    enabled: false;
+}
+
+configuration {
+    markup: false;
+}
