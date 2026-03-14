@@ -1,17 +1,28 @@
 {
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
     "modules-center": ["clock", "idle_inhibitor"],
-    "modules-right": ["tray", "pulseaudio", "custom/power"],
+    "modules-right": ["tray", "bluetooth", "network", "pulseaudio", "custom/power"],
 
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
     "network": {
-        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-wifi": "{essid} ",
         "format-ethernet": "{ifname} ",
         "format-disconnected": "", 
         "max-length": 50,
-        "on-click": "kitty -e 'nmtui'"
+        "on-click": "kitty -e 'impala'"
+    },
+    "hyprland/window": {
+    	"format": "{class}",
+    },
+    "bluetooth": {
+        "format": " {status}",
+        "format-disabled": "×",
+        "format-connected": " {num_connections}",
+        "tooltip-format": "{controller_alias}\n{controller_address}",
+        "tooltip-format-connected": "{device_enumerate}",
+        "on-click": "kitty -e 'bluetui'"
     },
     "idle_inhibitor": {
         "format": "{icon}",
@@ -19,6 +30,24 @@
             "activated": "",
             "deactivated": ""
         },
+    },
+    "hyprland/workspaces": {
+         "format": "{icon}",
+         "format-icons": {
+        	"1": "一",
+        	"2": "二",
+        	"3": "三",
+        	"4": "四",
+        	"5": "五",
+        	"active": "",
+        	"default": ""
+    	 },
+ 	 "all-outputs": true,
+    	 "disable-scroll": false,
+   	 "show-special": false,
+    	 "persistent-workspaces": {
+        	"*": 5
+    	  }
     },
     "tray": {
         "icon-size": 15,
@@ -45,19 +74,10 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "kitty -e 'pulsemixer'"
     },
 	"custom/power": {
 		"format": " ",
 		"on-click": "wlogout"
-	},
-  /*  "custom/scratchpad-indicator": {
-        "format-text": "{}hi",
-        "return-type": "json",
-        "interval": 3,
-        "exec": "~/.local/bin/scratchpad-indicator 2> /dev/null",
-        "exec-if": "exit 0",
-        "on-click": "swaymsg 'scratchpad show'",
-        "on-click-right": "swaymsg 'move scratchpad'"
-    } */
+	}
 }

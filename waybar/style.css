@@ -7,7 +7,9 @@
 }
 
 window {
-	/*font-weight: bold;*/
+	font-weight: bold;
+        padding: 0 20px;
+        margin: 0 10px;
 }
 window#waybar {
     background: rgba(0, 0, 0, 0);
@@ -15,7 +17,7 @@ window#waybar {
 /*-----module groups----*/
 .modules-right {
 	background-color: rgba(0,43,51,0.85);
-    margin: 2px 10px 0 0;
+    margin: 2px 20px 0 0;
 }
 .modules-center {
 	background-color: rgba(0,43,51,0.85);
@@ -23,6 +25,7 @@ window#waybar {
 }
 .modules-left {
     margin: 2px 0 0 5px;
+    padding: 0 10px;
 	background-color: rgba(0,119,179,0.6);
 }
 /*-----modules indv----*/
@@ -53,6 +56,9 @@ window#waybar {
 #custom-menu,
 #idle_inhibitor {
     padding: 0 10px;
+}
+#bluetooth {
+    padding: 0 14px;
 }
 #mode {
     color: #cc3436;
