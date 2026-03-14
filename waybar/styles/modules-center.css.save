@@ -1,0 +1,125 @@
+/*---------------
+    Indicator
+---------------*/
+
+#keyboard-state label,
+#language {
+	margin-right: 10px;
+	color: @hover-fg;
+        background-color: #6aa29f;
+}
+
+/*-----------------
+    Temperature
+-----------------*/
+
+#custom-left_div.2,
+#custom-left_inv.2 {
+	color: #83a598;
+        margin: 0px;
+        padding: 0px;
+}
+#temperature {
+        margin: 0px;
+        padding: 0px;
+	background-color: @temperature;
+}
+
+/*------------
+    Memory
+------------*/
+
+#custom-left_div.3,
+#custom-left_inv.3 {
+	color: #598081;
+        padding: 0px;
+        margin: 0px;
+}
+#memory {
+        
+	background-color: @memory;
+}
+
+/*---------
+    CPU
+---------*/
+
+#custom-left_div.4, 
+#custom-left_inv.4 {
+	color: #617582;
+}
+#cpu {
+	background-color: @cpu;
+}
+
+/*-----------------
+    Distro icon
+-----------------*/
+
+#custom-left_div.5,
+#custom-right_div.1 {
+	color: @surface0;
+}
+#custom-distro {
+	padding: 0 10px 0 5px;
+	background-color: @surface0;
+	color: @main-bg;
+}
+
+/*--------------------
+    Language
+--------------------*/
+
+#custom-right_inv.2,
+#custom-right_div.1 {
+        color: #5c707d;
+}
+
+/*----------
+    Time
+----------*/
+
+#clock.time {
+	padding-right: 6px;
+	background-color: @time;
+}
+#custom-right_div.2,
+#custom-right_inv.1 {
+	background-color: #5c707d;
+	color: @time;
+}
+
+/*----------
+    Date
+----------*/
+
+#clock.date {
+	padding-left: 6px;
+	background-color: @date;
+}
+#custom-right_div.3
+#custom-right_inv.3 {
+	background-color: @base;
+	color: @date;
+}
+
+/*-----------------
+    System tray
+-----------------*/
+
+#network {
+	background-color: @tray;
+	padding: 0 6px 0 4px;
+}
+#bluetooth {
+	background-color: @tray;
+	padding: 0 5px;
+}
+#custom-update {
+	background-color: @tray;
+	padding: 0 8px 0 2px;
+}
+#custom-right_div.5,
+#custom-right_inv.4 {
+	color: @tray;
+}
