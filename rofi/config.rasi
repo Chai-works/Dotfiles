@@ -182,4 +182,8 @@ configuration {
 
 //@theme "/usr/share/rofi/themes/Monokai.rasi"
 
+//@theme "/usr/share/rofi/themes/material.rasi"
+
+//@theme "/usr/share/rofi/themes/style-1.rasi"
+
 @theme "/usr/share/rofi/themes/material.rasi"
