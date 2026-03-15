@@ -1,6 +1,6 @@
 {
-    "modules-left": ["hyprland/workspaces", "hyprland/window"],
-    "modules-center": ["clock", "idle_inhibitor"],
+    "modules-left": ["clock", "hyprland/window"],
+    "modules-center": ["hyprland/workspaces"],
     "modules-right": ["tray", "bluetooth", "network", "pulseaudio", "custom/power"],
 
     "sway/mode": {
@@ -23,13 +23,6 @@
         "tooltip-format": "{controller_alias}\n{controller_address}",
         "tooltip-format-connected": "{device_enumerate}",
         "on-click": "kitty -e 'bluetui'"
-    },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        },
     },
     "hyprland/workspaces": {
          "format": "{icon}",

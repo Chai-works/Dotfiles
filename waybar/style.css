@@ -26,7 +26,8 @@ window#waybar {
 .modules-left {
     margin: 2px 0 0 5px;
     padding: 0 10px;
-	background-color: rgba(0,119,179,0.6);
+    font-weight: bold;
+    background-color: rgba(0,43,51,0.85);
 }
 /*-----modules indv----*/
 #workspaces button {
@@ -53,8 +54,7 @@ window#waybar {
 #tray,
 #mode,
 #custom-power,
-#custom-menu,
-#idle_inhibitor {
+#custom-menu {
     padding: 0 10px;
 }
 #bluetooth {
@@ -71,9 +71,6 @@ window#waybar {
     padding: 1px 1px 1px 6px;
 }
 /*-----Indicators----*/
-#idle_inhibitor.activated {
-    color: #2dcc36;
-}
 #pulseaudio.muted {
     color: #cc3436;
 }
