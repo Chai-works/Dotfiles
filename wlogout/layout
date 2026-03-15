@@ -1,0 +1,40 @@
+{
+    "label" : "logout",
+    "action" : "loginctl terminate-user $USER",
+    "text" : "Logout",
+    "keybind" : "l"
+}
+
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot",
+    "text" : "Reboot",
+    "keybind" : "r"
+}
+
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "text" : "Shutdown",
+    "keybind" : "s"
+}
+
+{
+    "label" : "suspend",
+    "action" : "systemctl suspend",
+    "text" : "Suspend",
+    "keybind" : "u"
+}
+
+{
+    "label" : "lock",
+    "action" : "swaylock",
+    "text" : "Lock",
+    "keybind" : "k"
+}
+{
+    "label" : "hibernate",
+    "action" : "systemctl hibernate",
+    "text" : "Hibernate",
+    "keybind" : "h"
+}
