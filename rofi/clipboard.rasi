@@ -1,0 +1,81 @@
+* {
+    bg:          rgba(29, 32, 33, 90%);
+    bg-alt:      rgba(40, 40, 40, 95%);
+    fg:          #ebdbb2;
+    fg-dim:      #a89984;
+    accent:      #83a598;
+    urgent:      #cc241d;
+    selected-bg: rgba(80, 73, 69, 85%);
+
+    background-color: transparent;
+    text-color:       @fg;
+    border:           0;
+    margin:           0;
+    padding:          0;
+    spacing:          0;
+}
+
+window {
+    background-color: @bg;
+    border-radius:    12px;
+    border:           1px;
+    border-color:     #504945;
+    width:            480px;
+    padding:          12px;
+}
+
+mainbox {
+    background-color: transparent;
+    children:         [ inputbar, listview ];
+    spacing:          8px;
+}
+
+inputbar {
+    background-color: @bg-alt;
+    border-radius:    8px;
+    padding:          8px 12px;
+    spacing:          8px;
+    children:         [ prompt, entry ];
+}
+
+prompt {
+    text-color: @accent;
+    font:       "monospace bold 13";
+}
+
+entry {
+    text-color:   @fg;
+    font:         "monospace 13";
+    placeholder:  "search clipboard...";
+    placeholder-color: @fg-dim;
+}
+
+listview {
+    background-color: transparent;
+    lines:            8;
+    scrollbar:        false;
+    spacing:          4px;
+}
+
+element {
+    background-color: transparent;
+    border-radius:    8px;
+    padding:          8px 12px;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color:       @fg;
+}
+
+element selected.normal {
+    background-color: @selected-bg;
+    text-color:       @fg;
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       inherit;
+    font:             "monospace 12";
+}
+
