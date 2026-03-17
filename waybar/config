@@ -1,7 +1,7 @@
 {
     "modules-left": ["clock", "hyprland/window"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["tray", "bluetooth", "network", "pulseaudio", "custom/power"],
+    "modules-right": ["tray", "bluetooth", "network", "pulseaudio", "battery", "custom/power"],
 
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
@@ -41,6 +41,16 @@
     	 "persistent-workspaces": {
         	"*": 5
     	  }
+    },
+    "battery": {
+    	"states": {
+        	"warning": 30,
+        	"critical": 15
+    	},
+    	"format": "{capacity}% {icon}",
+    	"format-charging": "{capacity}% 󰂄",
+    	"format-plugged": "{capacity}% 󰚥",
+    	"format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
     "tray": {
         "icon-size": 15,
