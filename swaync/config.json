@@ -38,10 +38,17 @@
 
     "widgets": [
       "mpris",
+      "title",
       "dnd",
       "notifications"
     ],
-   
+    
+    "title": {
+    	"text": "Notifications",
+    	"clear-all-button": true,
+    	"button-text": "Clear All"
+    },
+    
     "widget-config": {
         "backlight": {
             "device": "amdgpu_bl1",
