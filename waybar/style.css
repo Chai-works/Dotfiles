@@ -13,7 +13,8 @@ window#waybar {
 
 /* ── Left group ── */
 #clock,
-#window {
+#window,
+#custom-music {
     background-color: rgba(40, 40, 40, 0.85);
     color: #d79921;
     padding: 0 12px;
@@ -26,7 +27,12 @@ window#waybar {
 }
 
 #window {
-    border-radius: 0 8px 8px 0;
+   border-radius: 0 8px 8px 0;
+   color: #a89984;
+}
+
+#custom-music {
+    border-radius: 8px 8px 8px 8px;
     color: #a89984;
 }
 

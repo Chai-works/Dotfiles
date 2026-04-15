@@ -1,5 +1,5 @@
 {
-    "modules-left": ["clock", "hyprland/window"],
+    "modules-left": ["clock", "hyprland/window", "custom/music"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["tray", "bluetooth", "network", "pulseaudio", "battery", "custom/power"],
 
@@ -80,8 +80,15 @@
         },
         "on-click": "kitty -e 'pulsemixer'"
     },
-	"custom/power": {
-		"format": " ",
-		"on-click": "wlogout"
-	}
+    "custom/music": {
+ 	"exec": "~/dotfiles/scripts/music.sh",
+        "return-type": "json",
+        "interval": 1,
+        "escape": false,
+    	"on-click": "playerctl -p mpv play-pause"
+    },
+    "custom/power": {
+	"format": " ",
+	"on-click": "wlogout"
+    }
 }

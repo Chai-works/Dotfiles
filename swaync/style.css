@@ -1,11 +1,11 @@
-@define-color center-bg       rgba(8, 8, 11, 0.9);
-@define-color background      #08080b;
-@define-color text            #acb0d0;
-@define-color text-alt        #787c99;
-@define-color background-alt  #0e0e14;
-@define-color selected        alpha(@text-alt, .4);
-@define-color hover           alpha(@selected, .4);
-@define-color urgent          @text-alt;
+@define-color center-bg       rgba(30, 30, 30, 0.92);
+@define-color background      #1d2021;
+@define-color text            #d5c4a1;
+@define-color text-alt        #928374;
+@define-color background-alt  #282828;
+@define-color selected        alpha(#83a598, .25);
+@define-color hover           alpha(#504945, .3);
+@define-color urgent          #cc241d;
 
 * {
   color: @text;
@@ -119,14 +119,14 @@
 }
 
 .control-center .notification-background {
-  background: @background-alt;
+  background: alpha(#282828, 0.4);
   margin: 7px 0;
 }
 
 /* I dont want to see close buttons in notification center */
 .control-center .notification-background .close-button,
 .notification-group-close-button{
-  opacity: 0;
+  opacity: 1;
 }
 
 /* Notifications expanded-group */
